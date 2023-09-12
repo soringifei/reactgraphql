@@ -3,7 +3,7 @@ const githubQuery = {
   {
     viewer {
       name
-      repositories(first: 10) {
+      repositories(first: 30) {
         nodes {
           name
           description

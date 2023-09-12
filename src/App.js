@@ -35,10 +35,10 @@ function App() {
 			<p>Hey there {userName ? userName : 'Loading...'}</p>
 			{repoList && (
 				<ul className="list-group list-group-flush">
-					{repoList.map((repo) => (
-						<li
+					{repoList.map((repo, index) => (
+						repo && <li
 							className="list-group-item"
-							key={repo.id.toString()}
+							key={index.toString()}
 						>
 							<a
 								className="h5 mb-0 text-decoration-none"
